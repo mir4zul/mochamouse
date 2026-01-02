@@ -46,8 +46,8 @@ const variants = {
 
 const sizes = {
   sm: "text-xs px-12 py-2",
-  md: "text-xs px-10 py-2",
-  lg: "text-sm px-14 py-3",
+  md: "text-xs px-8 py-4",
+  lg: "text-sm px-10 py-4",
 };
 
 const classes = computed(

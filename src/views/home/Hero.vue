@@ -1,34 +1,33 @@
 <script setup>
-  import HeroImg from "@/assets/images/imgHero_Desktop@2x.png";
-  import DunkinRewardsLogo from "@/assets/images/Dunkin' Rewards Logo - Text_Desktop.svg";
   import Button from "@/components/Button.vue";
-
-  const heroSectionImageStyle = {
-    backgroundImage: `url(${HeroImg})`,
-  };
+  import ChocoBallDonut from "@/assets/images/CHOCOBALL_DONUT.png";
+  import { StarIcon } from "@heroicons/vue/24/solid";
 </script>
 
 <template>
+  <div class="max-w-[1440px] mx-auto">
   <div
-      class="bg-center bg-cover bg-no-repeat pt-20 pb-28"
-      :style="heroSectionImageStyle"
+      class="grid grid-cols-2 justify-center items-center py-10"
   >
-    <div class="max-w-3xl mx-auto">
-      <div>
-        <img :src="DunkinRewardsLogo" class="mx-auto" alt="">
-      </div>
-      <div class="text-center leading-16 mt-6">
-        <h1 class="font-dunkin font-bold text-[3.5rem] text-gray-700 ">MAKE THE MOST</h1>
-        <h1 class="font-dunkin font-bold text-[3.5rem] text-gray-700">OF YOUR DUNKIN’ RUN!</h1>
-      </div>
-      <div class="text-center max-w-xl text-gray-700 text-base mx-auto mt-4">
-        <p class="pb-6">
-          Calling all Dunkin’ fans! Join Dunkin’ Rewards today to enjoy
-          exclusive offers and start earning points toward
-          FREE food and drinks. The more you visit, the more benefits you unlock!
-        </p>
-        <Button label="Join Now" variant="primary" size="lg" />
+    <div>
+      <h1 class="font-inter text-9xl font-extrabold text-primary">Mochamuse Coffee & Donut</h1>
+      <p class="font-inter text-popover max-w-sm py-10">A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.</p>
+      <Button label="Order Now" variant="primary" size="lg" />
+    </div>
+    <div class="w-[715px] relative">
+      <img class="-rotate-[22deg]" :src="ChocoBallDonut" alt="">
+      <div class="absolute bg-accent top-7/12 left-14 p-6 rounded-3xl max-w-[250px] text-sm">
+        <div class="flex gap-1">
+          <StarIcon
+            v-for="i in 5"
+            :key="i"
+            class="h-6 w-6 text-primary"
+          />
+        </div>
+
+        <p class="text-popover font-normal pt-2">4.9 out of 5 Overall Star Rating for All Local Business.</p>
       </div>
     </div>
+  </div>
   </div>
 </template>

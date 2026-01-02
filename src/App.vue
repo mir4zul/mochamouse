@@ -2,32 +2,31 @@
 import { ref } from "vue";
 import Button from "@/components/Button.vue";
 import DunkinSvg from "@/assets/images/dd_nav_logo.svg";
-import Location from "@/assets/images/Locate.svg";
+import Logo from "@/assets/images/Logo.png";
 
 const isOpen = ref(false);
 </script>
 
 <template>
-  <div class="max-w-[1480px] mx-auto bg-white">
+  <div class="bg-gradient-to-b from-primary-foreground to-primary-foreground/50">
+  <div>
     <!--  Desktop view for Navigation  -->
-    <div class="sticky top-0 z-50 bg-white xl:block hidden">
-      <header class="flex justify-end font-montserrat p-3 border-b border-gray-300">
-        <div class="flex gap-4">
-          <button class="font-bold text-xs uppercase tracking-wider border-2 border-gray-900 px-10 py-1 rounded-full">Careers</button>
-          <button class="font-extrabold text-xs uppercase tracking-wider border-2 border-gray-900 px-2 py-1 rounded-full">Join Rewards</button>
-          <Button label="Sign In" variant="primary" size="sm" />
-        </div>
-      </header>
-
+    <div class="max-w-[1440px] mx-auto">
       <nav class="nav text-gray-700 font-medium flex justify-between items-center uppercase text-base">
-        <router-link to="/" class="nav-link font-dunkin">Menu</router-link>
-        <router-link to="/contact" class="nav-link font-dunkin">Locations</router-link>
-        <router-link to="/delivery" class="nav-link font-dunkin">Delivery</router-link>
-        <router-link to="/delivery" class="font-dunkin font-bold text-3xl tracking-wider text-secondary">Dunkin'</router-link>
-        <router-link to="/dunkin-rewards" class="nav-link font-dunkin">Dunkin Rewards</router-link>
-        <router-link to="/dunkin-card" class="nav-link font-dunkin">Dunkin Card</router-link>
-        <router-link to="/shop" class="nav-link font-dunkin">Shop</router-link>
-        <!--      <router-link to="/careers" class="nav-link font-dunkin">Careers</router-link>   -->
+          <div>
+            <img class="w-16" :src="Logo" alt="logo" />
+          </div>
+          <div class="flex gap-4">
+            <router-link to="/" class="nav-link font-inter-italic capitalize">Menu</router-link>
+            <router-link to="/contact" class="nav-link font-inter-italic capitalize">Locations</router-link>
+            <router-link to="/delivery" class="nav-link font-inter-italic capitalize">Delivery</router-link>
+            <router-link to="/dunkin-rewards" class="nav-link font-inter-italic capitalize">Dunkin Rewards</router-link>
+            <router-link to="/dunkin-card" class="nav-link font-inter-italic capitalize">Dunkin Card</router-link>
+            <router-link to="/shop" class="nav-link font-inter-italic capitalize">Shop</router-link>
+          </div>
+          <div>
+            <Button label="Order Now" variant="primary" size="lg" />
+          </div>
       </nav>
     </div>
 
@@ -101,6 +100,7 @@ const isOpen = ref(false);
 
     <!--  Content Area  -->
     <router-view />
+  </div>
   </div>
 </template>
 

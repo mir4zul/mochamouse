@@ -1,6 +1,8 @@
 <script setup>
 import Hero from "@/views/home/Hero.vue";
-import BenefitsSection from "@/views/home/BenefitsSection.vue";
+import Category from "@/views/home/Category.vue";
+import Favourite from "@/views/home/Favourite.vue";
+import Products from "@/views/home/Products.vue";
 import MealDealSection from "@/views/home/MealDealSection.vue";
 import AppSection from "@/views/home/AppSection.vue";
 import ProductList from "@/views/home/ProductList.vue";
@@ -10,12 +12,20 @@ import GoogleLocation from "@/views/home/GoogleLocation.vue";
 </script>
 
 <template>
-  <div class="">hello world</div>
   <!--  Hero Section -->
   <Hero/>
 
-  <!-- Benefits Section -->
-  <BenefitsSection />
+<!--  &lt;!&ndash; Benefits Section &ndash;&gt;-->
+<!--  <BenefitsSection />-->
+
+  <!-- Category Section -->
+  <Category />
+
+  <!-- Favourite Section -->
+  <Favourite />
+
+  <!-- Products Section -->
+  <Products />
 
   <!--  MealDealSection -->
   <MealDealSection/>
