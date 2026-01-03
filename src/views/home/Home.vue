@@ -3,20 +3,15 @@ import Hero from "@/views/home/Hero.vue";
 import Category from "@/views/home/Category.vue";
 import Favourite from "@/views/home/Favourite.vue";
 import Products from "@/views/home/Products.vue";
-import MealDealSection from "@/views/home/MealDealSection.vue";
-import AppSection from "@/views/home/AppSection.vue";
-import ProductList from "@/views/home/ProductList.vue";
-import Holiday from "@/views/home/Holiday.vue";
-import GoogleLocation from "@/views/home/GoogleLocation.vue";
+import Instant from "@/views/home/Instant.vue";
+import Review from "@/views/home/Review.vue";
+import Footer from "@/views/home/Footer.vue";
 
 </script>
 
 <template>
   <!--  Hero Section -->
   <Hero/>
-
-<!--  &lt;!&ndash; Benefits Section &ndash;&gt;-->
-<!--  <BenefitsSection />-->
 
   <!-- Category Section -->
   <Category />
@@ -27,22 +22,12 @@ import GoogleLocation from "@/views/home/GoogleLocation.vue";
   <!-- Products Section -->
   <Products />
 
-  <!--  MealDealSection -->
-  <MealDealSection/>
+  <!-- Instant -->
+  <Instant/>
 
-  <!-- AppSection -->
-  <AppSection/>
+  <!-- Review -->
+  <Review/>
 
-  <!-- ProductList -->
-  <ProductList/>
-
-  <!-- Holiday -->
-  <Holiday/>
-
-  <!-- GoogleLocation -->
-  <GoogleLocation/>
+  <!-- Footer -->
+  <Footer/>
 </template>
-
-<style scoped>
-
-</style>

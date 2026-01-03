@@ -16,13 +16,13 @@ const isOpen = ref(false);
           <div>
             <img class="w-16" :src="Logo" alt="logo" />
           </div>
-          <div class="flex gap-4">
-            <router-link to="/" class="nav-link font-inter-italic capitalize">Menu</router-link>
-            <router-link to="/contact" class="nav-link font-inter-italic capitalize">Locations</router-link>
-            <router-link to="/delivery" class="nav-link font-inter-italic capitalize">Delivery</router-link>
-            <router-link to="/dunkin-rewards" class="nav-link font-inter-italic capitalize">Dunkin Rewards</router-link>
-            <router-link to="/dunkin-card" class="nav-link font-inter-italic capitalize">Dunkin Card</router-link>
-            <router-link to="/shop" class="nav-link font-inter-italic capitalize">Shop</router-link>
+          <div class="flex gap-6">
+            <router-link to="/" class="nav-link font-inter-italic capitalize text-xl">Menu</router-link>
+            <router-link to="/contact" class="nav-link font-inter-italic capitalize text-xl">Locations</router-link>
+            <router-link to="/delivery" class="nav-link font-inter-italic capitalize text-xl">Delivery</router-link>
+            <router-link to="/dunkin-rewards" class="nav-link font-inter-italic capitalize text-xl">Dunkin Rewards</router-link>
+            <router-link to="/dunkin-card" class="nav-link font-inter-italic capitalize text-xl">Dunkin Card</router-link>
+            <router-link to="/shop" class="nav-link font-inter-italic capitalize text-xl">Shop</router-link>
           </div>
           <div>
             <Button label="Order Now" variant="primary" size="lg" />
